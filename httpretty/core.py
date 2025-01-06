@@ -872,6 +872,9 @@ class fakesock(object):
                 raise UnmockedError('socket cannot recv(): {!r}'.format(self))
 
             return self._read_buf.read(buffersize)
+        
+        def shutdown(self, *args, **kwargs):
+            return self.forward_and_trace('shutdown', *args, **kwargs)
 
         def __getattr__(self, name):
             if name in ('getsockopt', 'selected_alpn_protocol') and not self.truesock:
