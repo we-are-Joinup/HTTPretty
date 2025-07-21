@@ -46,7 +46,7 @@ tests_requires = ['nose', 'sure', 'coverage', 'mock;python_version<"3.3"',
 
 
 setup(
-    name='httpretty',
+    name='httpretty-joinup',
     version=read_version(),
     description='HTTP client mock for Python',
     long_description=local_file('README.rst'),
@@ -61,7 +61,7 @@ setup(
     test_suite='nose.collector',
     project_urls={
         "Documentation": "https://httpretty.readthedocs.io/en/latest/",
-        "Source Code": "https://github.com/gabrielfalcao/httpretty",
+        "Source Code": "https://github.com/we-are-joinup/httpretty",
         "Issue Tracker": "https://github.com/gabrielfalcao/httpretty/issues",
         "Continuous Integration": "https://github.com/gabrielfalcao/HTTPretty/actions/workflows/pyenv.yml?query=branch%3Amaster+event%3Apush",
         "Test Coverage": "https://codecov.io/gh/gabrielfalcao/httpretty",
